@@ -1,0 +1,117 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Co_Mute.Localization
+@using Volo.Abp.Users
+@model Co_Mute.Web.Pages.IndexModel
+@inject IHtmlLocalizer<Co_MuteResource> L
+@inject ICurrentUser CurrentUser
+@section styles {
+<abp-style src="/Pages/Index.css" />
+}
+@section scripts {
+<abp-script src="/Pages/Index.js" />
+}
+<div class="container">
+    <div class="p-5 text-center">
+        <div class="d-inline-block bg-success text-white p-1 h5 rounded mb-4 " role="alert">
+            <h5 class="m-1"> <i class="fas fa-rocket"></i> , <strong>Co_Mute</strong></h5>
+        </div>
+        <h1>Welcome to the Application</h1>
+
+        <p class="lead px-lg-5 mx-lg-5"></p>
+
+        @if (!CurrentUser.IsAuthenticated)
+        {
+            <a abp-button="Primary" href="~/Account/Login"><i class="fa fa-sign-in"></i> @L["Login/ Register"]</a>
+        }
+
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-auto text-center">
+                   
+                </div>
+                <div class="col-md d-flex align-items-center">
+                    <div class="pe-0 pe-md-4">
+                        <small class="text-uppercase text-muted"></small>
+                        <h2 class="mb-4">About</h2>
+                        <p class="mb-4">With ever rising fuel prices and increased traffic on our roads, the co-mute project was started in an effort to help alleviate some of these pressures. 
+                            Car-pooling can cut on travelling and vehicle maintenance costs. It also enables more effective use of commuters’ time, as time spent driving could be spent more productively.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-3 text-center">
+       
+    </div>
+    <div class="card mt-4 mb-5">
+        <div class="card-body">
+            <div class="row text-center justify-content-md-center">
+                <div class="col-lg-4">
+                   
+                </div>
+                <div class="col-lg-4 border-start">
+                   
+                </div>
+                <div class="col-lg-4 border-start">
+                   
+                </div>
+            </div>
+            <div class="row text-center mt-lg-3 justify-content-md-center">
+                <div class="col-lg-4">
+                   
+                </div>
+                <div class="col-lg-4 border-start">
+                    <div class="p-4">
+                        
+                        <p> <strong></strong> </p>
+                      
+                        <img src="/images/logo/leptonx/Comute.png" alt="" width="200" height="300">
+                    </div>
+                </div>
+                <div class="col-lg-4 border-start">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 my-3 text-center">
+        
+    </div>
+
+    <div class="card mt-4 mb-5">
+        <div class="card-body">
+           
+
+            <div class="row text-center justify-content-md-center">
+                
+                </div>
+                <div class="col-lg-2 border-start">
+                   
+                </div>
+                <div class="col-lg-2 border-start">
+                   
+                </div>
+                <div class="col-lg-2 border-start">
+                   
+                </div>
+                <div class="col-lg-2 border-start">
+                   
+                </div>
+                <div class="col-lg-2 border-start">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-5 text-center">
+        <p class="align-middle">
+
+        <a href="https://github.com/AdrianDrizzy?tab=repositories" target="_blank" class="mx-2"><i class="fa fa-github"></i><span class="text-secondary">Co-Mute 2022</span></a>
+        </p>
+    </div>
+</div>

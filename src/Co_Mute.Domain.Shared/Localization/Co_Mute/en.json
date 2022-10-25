@@ -1,0 +1,22 @@
+{
+  "culture": "en",
+  "texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "ProjectName": "Co-Mute",
+    "CarpoolDeletionConfirmationMessage": "Are you sure to delete the book '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted!",
+    "DepartureTime": "Departure Time",
+    "ExpectedArrivalTime": "Expected Arrival Time",
+    "DaysAvailable": "Days Available",
+    "OwnerLeader": "Owner/Leader",
+    "AvailableSeats": "Available Seats",
+    "Permission:Co_Mute": "Co-Mute",
+    "Permission:Carpools": "Carpool Management",
+    "Permission:Carpools.Create": "Creating new car-pools",
+    "Permission:Carpools.Edit": "Editing the car-pools",
+    "Permission:Carpools.Delete": "Deleting the car-pools"
+
+  }
+}

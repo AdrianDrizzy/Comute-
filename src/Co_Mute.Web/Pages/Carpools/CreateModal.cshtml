@@ -1,0 +1,19 @@
+﻿@page
+@using Co_Mute.Localization
+@using Co_Mute.Web.Pages.Carpools
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model Co_Mute.Web.Pages.Carpools.CreateModalModel
+@inject IStringLocalizer<Co_MuteResource> L
+@{
+    Layout = null;
+}
+<abp-dynamic-form abp-model="Carpool" asp-page="/Carpools/CreateModal">
+    <abp-modal>
+        <abp-modal-header title="@L["NewCarpool"].Value"></abp-modal-header>
+        <abp-modal-body>
+            <abp-form-content />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</abp-dynamic-form>
