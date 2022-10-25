@@ -1,4 +1,4 @@
-1.I created the project using the ABP Framework and to seed the data one should set the DbMigrator project as the Startup project and add/enable migration using the PMC or CMD of the Entity Framework Project.
+1.I created the project using the ABP Framework and to seed the data one should set the DbMigrator project as the Startup project,run it and add/enable migration using the PMC or CMD of the Entity Framework Project.
 
 2. To run the solution, one should set the Co-Mute Web Project as the StartUp Project and the run it.
 
